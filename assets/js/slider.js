@@ -70,21 +70,5 @@ const swiper = new Swiper('.swiper', {
             hide: false
         },
         },
-        // 940: {
-        // direction: 'vertical',
-        // loop: true,
-        // autoHeight: true,
-        // mousewheel: false,
-        // scrollbar: false,
-        // slidesPerView: 1.5,
-        // spaceBetween: 80,
-        // // handleElementorBreakpoints: true,
-      
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        //     draggable: true,
-        //     hide: false
-        // },
-        // },
     }
 });
