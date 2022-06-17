@@ -64,27 +64,18 @@ const swiper = new Swiper('.swiper', {
         spaceBetween: 80,
         // handleElementorBreakpoints: true,
       
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
-            hide: false
-        },
-
-        // direction: 'horizontal',
-        // slidesPerView: 1,
-        // spaceBetween: 300,
-        // mousewheel: true,
-        // scrollbar: true,
-        // centeredSlides: true,
-        // centeredSlidesBounds: true,
-
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+                hide: false
+            },
         },
         340: {
         direction: 'horizontal',
         loop: true,
         autoHeight: true,
         speed: 0.1,
-        mousewheel: true,
+        mousewheel: false,
         slidesPerView: 1,
         scrollbar: false,
         spaceBetween: 80,
