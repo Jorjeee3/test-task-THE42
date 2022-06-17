@@ -23,6 +23,7 @@ module.exports = env => {
                 'css/fonts': './assets/scss/fonts.scss',
                 'css/normalize': './assets/scss/_normalize.scss',
                 'js/custom': './assets/js/script.js',
+                'js/slider': './assets/js/slider.js',
             },
         output: {
             path: path.resolve(__dirname, 'static'),

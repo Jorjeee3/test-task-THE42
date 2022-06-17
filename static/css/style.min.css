@@ -1,5 +1,445 @@
+@font-face {
+  font-family: "Greycliff CF";
+  src: url(../fonts/d24d2be1bb81e0c291ed340578e3fde1.eot);
+  src: url(../fonts/d24d2be1bb81e0c291ed340578e3fde1.eot?#iefix) format("embedded-opentype"), url(../fonts/7cfe1d42ac9182f542ad194a9f35cd16.woff2) format("woff2"), url(../fonts/338867e74b0916d0f59aa1b5753df4b8.woff) format("woff"), url(../fonts/3d4de1b0b2cb55f62740585f9ad3b945.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Greycliff CF";
+  src: url(../fonts/d99b9d2d8b79ec9ad9d623c5d4039980.eot);
+  src: url(../fonts/d99b9d2d8b79ec9ad9d623c5d4039980.eot?#iefix) format("embedded-opentype"), url(../fonts/79a73e09190f74868e57c360303a92f7.woff2) format("woff2"), url(../fonts/3b0df1c5348c0c36d5ae4b1542454640.woff) format("woff"), url(../fonts/97830b952b8e27b308d00a0974867768.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Greycliff CF";
+  src: url(../fonts/a9c64563f1417b1d92c0260121f10c43.eot);
+  src: url(../fonts/a9c64563f1417b1d92c0260121f10c43.eot?#iefix) format("embedded-opentype"), url(../fonts/df1c1ca03150e4002fc13b38473f3047.woff2) format("woff2"), url(../fonts/4d91ece08fe5f217b7d934603938c494.woff) format("woff"), url(../fonts/e783934815c20ef439c1bb7f99e583e9.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Greycliff CF";
+  src: url(../fonts/597b82dc768b461b43ed0e064e8618bc.eot);
+  src: url(../fonts/597b82dc768b461b43ed0e064e8618bc.eot?#iefix) format("embedded-opentype"), url(../fonts/f35deb16fc5b1c5ae57f3f28175c04a6.woff2) format("woff2"), url(../fonts/0876c5c193a5c12fb65094d5e1380e62.woff) format("woff"), url(../fonts/5edabbf1115ea2919e8542ab85b8d36e.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Greycliff CF";
+  src: url(../fonts/8157804c92325b24bc27083d2696f351.eot);
+  src: url(../fonts/8157804c92325b24bc27083d2696f351.eot?#iefix) format("embedded-opentype"), url(../fonts/7bf146502f6ddd4e625f59bd14c9eeaf.woff2) format("woff2"), url(../fonts/84762b867eaeaa7654ac7113ee7c6b90.woff) format("woff"), url(../fonts/0855700c02d009accb1aa50ed96125b6.ttf) format("truetype");
+  font-weight: 300;
+  font-style: oblique;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Greycliff CF";
+  src: url(../fonts/6307ca708eb8947252fd7109d4223a51.eot);
+  src: url(../fonts/6307ca708eb8947252fd7109d4223a51.eot?#iefix) format("embedded-opentype"), url(../fonts/a50ca361476b146feb268915587c88e7.woff2) format("woff2"), url(../fonts/5edefbbac5e7e3e50bed18f9c72707d7.woff) format("woff"), url(../fonts/def23fc3d11bb82419fc955fd6e64f85.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quincy CF";
+  src: url(../fonts/2fd32d2596d04142c04dad7135c0f955.otf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 body {
-  background-color: rgb(212, 147, 42);
+  font-family: "Greycliff CF";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.active-purple {
+  background-color: rgba(90, 88, 207, 0.15);
+}
+
+.active-blue {
+  background-color: rgba(64, 139, 252, 0.15);
+}
+
+.active-green {
+  background-color: rgba(38, 134, 83, 0.2);
+}
+
+.active-yellow {
+  background-color: rgba(249, 210, 112, 0.25);
+}
+
+.active-red {
+  background-color: rgba(251, 202, 202, 0.3);
+}
+
+.program-section {
+  height: 100vh;
+}
+.program-section .container {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+}
+.program-section .container .program-content {
+  display: flex;
+}
+.program-section .container .program-content .found-wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.program-section .container .program-content .found-wrapper .found-content {
+  width: 100%;
+  max-width: 550px;
+}
+.program-section .container .program-content .found-wrapper .found-content .found-title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 62px;
+}
+.program-section .container .program-content .found-wrapper .found-content .found-description {
+  font-family: "Quincy CF";
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 38px;
+  line-height: 150%;
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination {
+  display: block;
+  transform: translate3d(0, 0, 0);
+  text-align: left;
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet {
+  display: inline-block;
+  padding: 0;
+  border-radius: 100px;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  text-align: center;
+  font-size: 182px;
+  color: #fff;
+  opacity: 1;
+  background-color: rgba(250, 250, 250, 0.2);
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet .found-tab {
+  padding: 12px 24px 12px 12px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 100px;
+  background-color: rgb(246, 246, 246);
+  opacity: 0.6;
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet .found-tab .found-tab-icon {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet .found-tab .found-tab-text {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab {
+  opacity: 1;
+  font-weight: 700;
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(1):focus {
+  background-color: rgba(216, 155, 40, 0.999);
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(2):focus {
+  background-color: rgba(28, 24, 231, 0.976) !important;
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(3):focus {
+  background-color: rgb(28, 237, 125);
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(4):focus {
+  background-color: rgba(217, 160, 15, 0.891);
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(5):focus {
+  background-color: rgba(223, 32, 32, 0.876);
+}
+.program-section .container .program-content .found-wrapper .swiper-pagination {
+  position: static;
+  display: block;
+}
+.program-section .container .program-content .program-list-wrapper {
+  width: 50%;
+  height: 100vh;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMCIgaGVpZ2h0PSIxMDM0IiB2aWV3Qm94PSIwIDAgNzIwIDgzNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuMDAwNDg2Mjg5IDc2LjA1OUwwLjAwMDk3NjU2MiAwSDcyMEw3MjAgMzczLjg5MUM3MjAgNDI0LjMwNSA2OTAuODUzIDQ3MC4xNzMgNjQ1LjIxMiA0OTEuNTg0TDUwOC40MzUgNTU1Ljc0OUM0NzUuMzg2IDU3MS4yNTIgNDcyLjA1NSA2MTYuOTU2IDUwMi41MDcgNjM3LjA4N0w2NzUuNjgyIDc1MS41NzRDNzAzLjM1NCA3NjkuODY4IDcyMCA4MDAuODI3IDcyMCA4MzRIMC4wMDA5NzY1NjJMMC4wMDEyMzI0NyA1MzcuMDAzQzAuMDAxMjc2ODUgNDg1LjQ4OSAyMS40NzQ3IDQzNi4zMDYgNTkuMjU1NiA0MDEuMjg2TDIyOS4yODkgMjQzLjY4MUMyNDQuOTY5IDIyOS4xNDcgMjM3LjgwNyAyMDIuOTc4IDIxNi45MTEgMTk4LjQ1NUw3My43MzMyIDE2Ny40NjFDMzAuNzA1MyAxNTguMTQ3IDAuMDAwMjAyNTA5IDEyMC4wODQgMC4wMDA0ODYyODkgNzYuMDU5WiIgZmlsbD0iIzVBNThDRiIvPgo8L3N2Zz4K);
+}
+.program-section .container .program-content .program-list-wrapper .swiper {
+  height: 100vh;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card {
+  max-width: 452px;
+  text-align: center;
+  background-color: #fff;
+  padding: 48px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px rgba(47, 47, 47, 0.2);
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .title-wrapper .title-icon {
+  margin-right: 14px;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .title-wrapper .program-item-title {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-description {
+  line-height: 170%;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list {
+  display: flex;
+  padding: 0;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list .prescription-item {
+  display: flex;
+  align-items: center;
+  background-color: #FDF4DB;
+  padding: 12px 15px 12px 12px;
+  border-radius: 8px;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list .prescription-item .prescription-topic {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list .prescription-item .prescription-icon {
+  margin-left: 8px;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list .prescription-item:nth-child(2) {
+  margin: 0 14px;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-list {
+  margin-bottom: 40px;
+  list-style: none;
+  padding: 0;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-list .card-item {
+  margin-bottom: 16px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-list .card-item .card-item-icon {
+  margin: 0 13px 0 8px;
+  transform: translate(0, 5px);
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-list .card-item .card-item-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+.program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-button {
+  background-color: #10100E;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 0;
+  width: 100%;
+  border: 0;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1040px) {
+  .program-section {
+    height: 100vh;
+  }
+  .program-section .container {
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .program-section .container .program-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .program-section .container .program-content .found-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 80px 24px 0;
+  }
+  .program-section .container .program-content .found-wrapper .found-content {
+    width: 100%;
+    max-width: 1040px;
+  }
+  .program-section .container .program-content .found-wrapper .found-content .found-title {
+    margin-bottom: 24px;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .program-section .container .program-content .found-wrapper .found-content .found-description {
+    font-family: "Quincy CF";
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 38px;
+    line-height: 150%;
+  }
+  .program-section .container .program-content .found-wrapper .found-content .swiper-pagination {
+    display: block;
+    transform: translate3d(0, 0, 0);
+    text-align: left;
+  }
+  .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet {
+    display: inline-block;
+    padding: 0;
+    border-radius: 100px;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+    font-size: 182px;
+    color: #fff;
+    opacity: 1;
+    background-color: rgba(250, 250, 250, 0.2);
+  }
+  .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet .found-tab {
+    padding: 8px 15px 8px 8px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 100px;
+    background-color: rgb(246, 246, 246);
+    opacity: 0.6;
+  }
+  .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet .found-tab .found-tab-icon {
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet .found-tab .found-tab-text {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab {
+    opacity: 1;
+    font-weight: 700;
+  }
+  .program-section .container .program-content .found-wrapper .swiper-pagination {
+    position: static;
+    display: block;
+  }
+  .program-section .container .program-content .program-list-wrapper {
+    height: 640px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzc1IiBoZWlnaHQ9IjUwOCIgdmlld0JveD0iMCAwIDM3NSA1MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNTYuNCAwLjAwMDUwMDA3MUwzNzUgMC4wMDA2ODkwMTlMMzc1IDUwOEwyNDYuMjAzIDUwOEMxOTkuOTYxIDUwOCAxNTguMzE2IDQ4MC4wMiAxNDAuODM5IDQzNy4yMDlDMTI3Ljk2MyA0MDUuNjcxIDg0LjQ0NyA0MDIuNzQgNjcuNDU5NCA0MzIuMjY3TDM1LjgwMDkgNDg3LjI5NEMyOC40MzEgNTAwLjEwNCAxNC43Nzg2IDUwOCA4LjMxMjE5ZS0wNiA1MDhMMy4wNTE3NWUtMDUgMC4wMDA2NzI2MjdMMTQ1LjM2MiAwLjAwMDg3NTUxOUMxNjEuMzM0IDAuMDAwODk3ODEyIDE3Ni45NDEgNC43ODE4IDE5MC4xNzIgMTMuNzI4TDI1Ni4xNDMgNTguMzMzN0MyNjguNjUzIDY2Ljc5MjMgMjg1Ljc4MiA2MS4wODA5IDI5MC43MTIgNDYuODA3QzMwMC4zODggMTguNzk0NSAzMjYuNzY0IDAuMDAwMTk5MDEzIDM1Ni40IDAuMDAwNTAwMDcxWiIgZmlsbD0iIzVBNThDRiIvPgo8L3N2Zz4K);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper {
+    height: 100%;
+    transition: all 0 ease-out;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card {
+    width: 326px;
+    text-align: center;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px rgba(47, 47, 47, 0.2);
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .title-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .title-wrapper .title-icon {
+    margin-right: 10px;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .title-wrapper .program-item-title {
+    font-size: 22px !important;
+    margin: 0;
+    font-weight: 700;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-description {
+    line-height: 170%;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list {
+    display: flex;
+    padding: 0;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list .prescription-item {
+    display: flex;
+    align-items: center;
+    background-color: #FDF4DB;
+    padding: 12px 6px;
+    border-radius: 8px;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list .prescription-item .prescription-topic {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list .prescription-item .prescription-icon {
+    margin-left: 8px;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list .prescription-item:nth-child(2) {
+    margin: 0 8px;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-list {
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-list .card-item {
+    margin-bottom: 16px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-list .card-item .card-item-icon {
+    margin: 0 13px 0 8px;
+    transform: translate(0, 5px);
+  }
+  .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .card-list .card-item .card-item-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map*/

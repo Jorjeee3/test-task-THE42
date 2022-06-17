@@ -4,13 +4,309 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test task THE24</title>
+    <title>test task THE42</title>
     <link rel="stylesheet" href="./static/css/normalize.min.css">
     <link rel="stylesheet" href="./static/css/style.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>
 
+    <section class="program-section">
+        <div class="container">
+            <div class="program-content">
+                <div class="found-wrapper">
+                    <div class="found-content">
+                        <h1 class="found-title">The Found Program</h1>
+                        <p class="found-description">
+                            There’s no one-and-done solution when it 
+                            comes to sustainable weight care. With Found, 
+                            five key factors come together on your journey 
+                            to reach your goals
+                        </p>
+                        <div class="swiper-pagination found-list"></div> 
+                    </div>
+                </div>
+                <div class="program-list-wrapper">
+                    <!-- <svg width="375" height="508" viewBox="0 0 375 508" class="background-bubble" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M356.4 0.000500071L375 0.000689019L375 508L246.203 
+                        508C199.961 508 158.316 480.02 140.839 437.209C127.963 405.671
+                        84.447 402.74 67.4594 432.267L35.8009 487.294C28.431 500.104 
+                        14.7786 508 8.31219e-06 508L3.05175e-05 0.000672627L145.362 
+                        0.000875519C161.334 0.000897812 176.941 4.7818 190.172 13.728L256.143 
+                        58.3337C268.653 66.7923 285.782 61.0809 290.712 46.807C300.388 18.7945 
+                        326.764 0.000199013 356.4 0.000500071Z" 
+                        fill="#408BFC" class="background-bubble-fill"
+                    /> -->
+
+                    <!-- <svg width="1000" height="1034" viewBox="0 0 720 834" class="background-bubble" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.000486289 76.059L0.000976562 0H720L720
+                         373.891C720 424.305 690.853 470.173 645.212 491.584L508.435
+                          555.749C475.386 571.252 472.055 616.956 502.507 637.087L675.682 
+                          751.574C703.354 769.868 720 800.827 720 834H0.000976562L0.00123247
+                           537.003C0.00127685 485.489 21.4747 436.306 59.2556 
+                           401.286L229.289 243.681C244.969 229.147 237.807 202.978 216.911 
+                           198.455L73.7332 167.461C30.7053 158.147 0.000202509
+                            120.084 0.000486289 76.059Z" fill="#5A58CF" class="background-bubble-fill"
+                        />
+                    </svg> -->
+                        
+                    </svg>
+                    <div class="swiper">
+                        <div class="swiper-wrapper program-list">
+
+                            
+                          <div  class="swiper-slide">
+                            <div class="program-card">
+                                <div class="title-wrapper">
+                                    <img
+                                        src="./assets/images/program-icons/board.svg"
+                                        alt="" 
+                                        class="title-icon"
+                                    >
+                                    <h2 class="program-item-title">Board-certified doctors</h2>
+                                </div>
+                                <ul class="card-list">
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/purple.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Board-certified and specifically trained on weight loss medication</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/purple.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Virtual appointments, no in-person office visits required</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/purple.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Found doctors customize the program to your specific needs</p>
+                                    </li>
+                                </ul>
+                                <button class="card-button">Continue</button>
+                                <span class="card-payment">Starting at $99/month</span>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="program-card">
+                                <div class="title-wrapper">
+                                    <img
+                                        src="./assets/images/program-icons/personal.svg"
+                                        alt="" 
+                                        class="title-icon"
+                                    >
+                                    <h2 class="program-item-title">Personal health coach</h2>
+                                </div>
+                                <ul class="card-list">
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/blue.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Coaches tailor your movement and nutrition plan to fit your needs</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/blue.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">On-demand availability to answer all of your questions</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/blue.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Build sustainable habits with the help of your coach</p>
+                                    </li>
+                                </ul>
+                                <button class="card-button">Continue</button>
+                                <span class="card-payment">Starting at $99/month</span>
+                              </div>
+                          </div>
+
+                          
+
+                          <div class="swiper-slide">
+                            <div class="program-card">
+                                <div class="title-wrapper">
+                                    <img
+                                        src="./assets/images/program-icons/found.svg"
+                                        alt="" 
+                                        class="title-icon"
+                                    >
+                                    <h2 class="program-item-title">Found mobile app</h2>
+                                </div>
+                                <ul class="card-list">
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/green.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Keep track of your progress by logging your routines</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/green.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Coaches use logged routines to personalize your weight loss program</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/green.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Integrates with Apple Health and Google Fit</p>
+                                    </li>
+                                </ul>
+                                <button class="card-button">Continue</button>
+                                <span class="card-payment">Starting at $99/month</span>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="program-card">
+                                <div class="title-wrapper">
+                                    <img
+                                        src="./assets/images/program-icons/prescription.svg"
+                                        alt="" 
+                                        class="title-icon"
+                                    >
+                                    <h2 class="program-item-title">Prescription medication</h2>
+                                </div>
+                                <p class="prescription-description">
+                                    Our medical team provides access 
+                                    to the widest set of prescriptions
+                                    on the market, including (but not limited to):
+                                </p>
+                                <ul class="prescription-list">
+                                    <li class="prescription-item">
+                                        <span class="prescription-topic">Phentermine</span>
+                                        <img 
+                                            src="./assets/images/program-icons/i.svg" 
+                                            alt=""
+                                            class="prescription-icon"
+                                        >
+                                    </li>
+                                    <li class="prescription-item">
+                                        <span class="prescription-topic">GLP-1</span>
+                                        <img 
+                                            src="./assets/images/program-icons/i.svg" 
+                                            alt=""
+                                            class="prescription-icon"
+                                        >
+                                    </li>
+                                    <li class="prescription-item">
+                                        <span class="prescription-topic">Metformin</span>
+                                        <img 
+                                            src="./assets/images/program-icons/i.svg" 
+                                            alt=""
+                                            class="prescription-icon"
+                                        >
+                                    </li>
+                                </ul>
+                                <ul class="card-list">
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/yellow.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Work directly with our doctors to find the medication right for you</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/yellow.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Medication delivered to your door</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/yellow.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">No insurance requirements</p>
+                                    </li>
+                                </ul>
+                                <button class="card-button">Continue</button>
+                                <span class="card-payment">Starting at $99/month</span>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="program-card">
+                                <div class="title-wrapper">
+                                    <img
+                                        src="./assets/images/program-icons/supportive.svg"
+                                        alt="" 
+                                        class="title-icon"
+                                    >
+                                    <h2 class="program-item-title">Supportive community</h2>
+                                </div>
+                                <ul class="card-list">
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/red.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Celebrate your journey with thousands of other members</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/red.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">Share recipes, weight loss milestones, and roadblocks</p>
+                                    </li>
+                                    <li class="card-item">
+                                        <img
+                                            src="./assets//images//program-icons//program-ticks/red.svg"
+                                            alt=""
+                                            class="card-item-icon"
+                                        >
+                                        <p class="card-item-text">The Found team is actively involved to make sure you have the best experience</p>
+                                    </li>
+                                </ul>
+                                <button class="card-button">Continue</button>
+                                <span class="card-payment">Starting at $99/month</span>
+                              </div>
+                          </div>
+                        </div>
+                      
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
