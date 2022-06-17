@@ -61,18 +61,6 @@ body {
   box-sizing: border-box;
 }
 
-.green {
-  background-color: green;
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
-}
-
 .program-section {
   height: 100vh;
 }
@@ -171,10 +159,21 @@ body {
 .program-section .container .program-content .program-list-wrapper {
   width: 50%;
   height: 100vh;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMCIgaGVpZ2h0PSIxMDM0IiB2aWV3Qm94PSIwIDAgNzIwIDgzNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuMDAwNDg2Mjg5IDc2LjA1OUwwLjAwMDk3NjU2MiAwSDcyMEw3MjAgMzczLjg5MUM3MjAgNDI0LjMwNSA2OTAuODUzIDQ3MC4xNzMgNjQ1LjIxMiA0OTEuNTg0TDUwOC40MzUgNTU1Ljc0OUM0NzUuMzg2IDU3MS4yNTIgNDcyLjA1NSA2MTYuOTU2IDUwMi41MDcgNjM3LjA4N0w2NzUuNjgyIDc1MS41NzRDNzAzLjM1NCA3NjkuODY4IDcyMCA4MDAuODI3IDcyMCA4MzRIMC4wMDA5NzY1NjJMMC4wMDEyMzI0NyA1MzcuMDAzQzAuMDAxMjc2ODUgNDg1LjQ4OSAyMS40NzQ3IDQzNi4zMDYgNTkuMjU1NiA0MDEuMjg2TDIyOS4yODkgMjQzLjY4MUMyNDQuOTY5IDIyOS4xNDcgMjM3LjgwNyAyMDIuOTc4IDIxNi45MTEgMTk4LjQ1NUw3My43MzMyIDE2Ny40NjFDMzAuNzA1MyAxNTguMTQ3IDAuMDAwMjAyNTA5IDEyMC4wODQgMC4wMDA0ODYyODkgNzYuMDU5WiIgZmlsbD0iIzVBNThDRiIvPgo8L3N2Zz4K);
+  position: relative;
+}
+.program-section .container .program-content .program-list-wrapper .desktop-background {
+  position: fixed;
+  display: block;
+  z-index: 0;
+  height: 100vh;
+  object-fit: fill;
+}
+.program-section .container .program-content .program-list-wrapper .mobile-background {
+  display: none;
 }
 .program-section .container .program-content .program-list-wrapper .swiper {
   height: 100vh;
+  z-index: 10;
 }
 .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide {
   display: flex;
@@ -352,14 +351,22 @@ body {
   }
   .program-section .container .program-content .program-list-wrapper {
     height: 540px;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzc1IiBoZWlnaHQ9IjUwOCIgdmlld0JveD0iMCAwIDM3NSA1MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNTYuNCAwLjAwMDUwMDA3MUwzNzUgMC4wMDA2ODkwMTlMMzc1IDUwOEwyNDYuMjAzIDUwOEMxOTkuOTYxIDUwOCAxNTguMzE2IDQ4MC4wMiAxNDAuODM5IDQzNy4yMDlDMTI3Ljk2MyA0MDUuNjcxIDg0LjQ0NyA0MDIuNzQgNjcuNDU5NCA0MzIuMjY3TDM1LjgwMDkgNDg3LjI5NEMyOC40MzEgNTAwLjEwNCAxNC43Nzg2IDUwOCA4LjMxMjE5ZS0wNiA1MDhMMy4wNTE3NWUtMDUgMC4wMDA2NzI2MjdMMTQ1LjM2MiAwLjAwMDg3NTUxOUMxNjEuMzM0IDAuMDAwODk3ODEyIDE3Ni45NDEgNC43ODE4IDE5MC4xNzIgMTMuNzI4TDI1Ni4xNDMgNTguMzMzN0MyNjguNjUzIDY2Ljc5MjMgMjg1Ljc4MiA2MS4wODA5IDI5MC43MTIgNDYuODA3QzMwMC4zODggMTguNzk0NSAzMjYuNzY0IDAuMDAwMTk5MDEzIDM1Ni40IDAuMDAwNTAwMDcxWiIgZmlsbD0iIzVBNThDRiIvPgo8L3N2Zz4K);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .program-section .container .program-content .program-list-wrapper .desktop-background {
+    display: none;
+  }
+  .program-section .container .program-content .program-list-wrapper .mobile-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
     width: 100%;
   }
   .program-section .container .program-content .program-list-wrapper .swiper {
     height: 100%;
-    padding-top: 30px;
+    padding: 30px 0;
   }
   .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card {
     width: 326px;

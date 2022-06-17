@@ -8,20 +8,6 @@ body {
     box-sizing: border-box;
 }
 
-
-.green {
-    background-color: green;
-}
-
-.red {
-    background-color: red;
-}
-
-.blue {
-    background-color: blue;
-}
-
-
 .program-section {
     height: 100vh;
 
@@ -95,14 +81,7 @@ body {
                                     font-weight: 400;
                                     background-color: rgb(255, 255, 255, 0);
                                 }
-
-                                
                             }
-
-                            // .swiper-pagination-bullet
-                            
-
-
                         }
                         .swiper-pagination-bullet-active {
                             .found-tab {
@@ -148,31 +127,24 @@ body {
                     display: block; 
                 }
             }
-              
             .program-list-wrapper {
                 width: 50%;
                 height: 100vh;
-                background-image: url('../images/background/purple-bgc.svg');
+                position: relative;
 
-                // width: 50%;
-                // height: 100vh;
-                // position: relative;
-
-                // .background-bubble {
-                //     position: absolute;
-                //     top: 0;
-                //     left: 0;
-                //     width: 100%;
-                //     height: 100vh;
-  
-                //     .background-bubble-fill {
-                //       fill: #000 !important;
-                //     }
-                // }
-
-
+                .desktop-background {
+                    position: fixed;
+                    display: block;
+                    z-index: 0;
+                    height: 100vh;
+                    object-fit: fill;
+                }
+                .mobile-background {
+                    display: none;
+                }
                 .swiper { 
                     height: 100vh;
+                    z-index: 10;
                     
                     .program-list {
                         .swiper-slide {
@@ -270,7 +242,6 @@ body {
                                 }
                             }
                         }
-
                     }
                 }
             }
@@ -362,22 +333,6 @@ body {
                                 .found-tab {
                                     opacity: 1;
                                     font-weight: 700;
-    
-                                    // &:nth-child(1) {
-                                    //     background-color: rgba(216, 155, 40, 0.999);
-                                    // }
-                                    // &:nth-child(2) {
-                                    //     background-color: rgba(28, 24, 231, 0.976);
-                                    // }
-                                    // &:nth-child(3) {
-                                    //     background-color: rgb(28, 237, 125);
-                                    // }
-                                    // &:nth-child(4) {
-                                    //     background-color: rgba(217, 160, 15, 0.891);
-                                    // }
-                                    // &:nth-child(5) {
-                                    //     background-color: rgba(223, 32, 32, 0.876);
-                                    // }
                                 }
                             }
                         }
@@ -387,18 +342,25 @@ body {
                         display: block; 
                     }
                 }
-                  
                 .program-list-wrapper {
                     height: 540px;
-                    background-image: url('../images/background/purple-bgc-mobile.svg');
-                    background-repeat: no-repeat;
-                    background-size: 100% ; 
                     width: 100%;
+                    position: relative;
 
+                    .desktop-background {
+                        display: none;
+                    }
+
+                    .mobile-background {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        display: block;
+                        width: 100%;
+                    }
                     .swiper { 
                         height: 100%;
-                        // transition: all 0 ease-out;
-                        padding-top: 30px;
+                        padding: 30px 0;
                         
                         .program-list {
                             .swiper-slide {
