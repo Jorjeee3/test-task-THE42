@@ -61,26 +61,6 @@ body {
   box-sizing: border-box;
 }
 
-.active-purple {
-  background-color: rgba(90, 88, 207, 0.15);
-}
-
-.active-blue {
-  background-color: rgba(64, 139, 252, 0.15);
-}
-
-.active-green {
-  background-color: rgba(38, 134, 83, 0.2);
-}
-
-.active-yellow {
-  background-color: rgba(249, 210, 112, 0.25);
-}
-
-.active-red {
-  background-color: rgba(251, 202, 202, 0.3);
-}
-
 .program-section {
   height: 100vh;
 }
@@ -156,21 +136,6 @@ body {
 .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab {
   opacity: 1;
   font-weight: 700;
-}
-.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(1):focus {
-  background-color: rgba(216, 155, 40, 0.999);
-}
-.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(2):focus {
-  background-color: rgba(28, 24, 231, 0.976) !important;
-}
-.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(3):focus {
-  background-color: rgb(28, 237, 125);
-}
-.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(4):focus {
-  background-color: rgba(217, 160, 15, 0.891);
-}
-.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab:nth-child(5):focus {
-  background-color: rgba(223, 32, 32, 0.876);
 }
 .program-section .container .program-content .found-wrapper .swiper-pagination {
   position: static;

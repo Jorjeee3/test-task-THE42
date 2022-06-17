@@ -8,24 +8,6 @@ body {
     box-sizing: border-box;
 }
 
-.active-purple {
-    background-color: rgba(90, 88, 207, 15%);
-}
-.active-blue {
-    background-color: rgba(64, 139, 252, 15%);
-}
-.active-green {
-    background-color: rgba(38, 134, 83, 20%);
-}
-.active-yellow {
-    background-color: rgba(249, 210, 112, 25%);
-}
-.active-red {
-    background-color: rgba(251, 202, 202, 30%);
-}
-
-
-
 .program-section {
     height: 100vh;
 
@@ -107,22 +89,6 @@ body {
                             .found-tab {
                                 opacity: 1;
                                 font-weight: 700;
-
-                                &:nth-child(1):focus {
-                                    background-color: rgba(216, 155, 40, 0.999);
-                                }
-                                &:nth-child(2):focus {
-                                    background-color: rgba(28, 24, 231, 0.976) !important;
-                                }
-                                &:nth-child(3):focus {
-                                    background-color: rgb(28, 237, 125);
-                                }
-                                &:nth-child(4):focus {
-                                    background-color: rgba(217, 160, 15, 0.891);
-                                }
-                                &:nth-child(5):focus {
-                                    background-color: rgba(223, 32, 32, 0.876);
-                                }
                             }
                         }
                     }

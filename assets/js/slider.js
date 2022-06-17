@@ -70,5 +70,22 @@ const swiper = new Swiper('.swiper', {
             hide: false
         },
         },
+        940: {
+        direction: 'vertical',
+        loop: true,
+        autoHeight: true,
+        speed: 0.1,
+        // mousewheel: true,
+        slidesPerView: 1.5,
+        scrollbar: true,
+        spaceBetween: 80,
+        // handleElementorBreakpoints: true,
+      
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+            hide: false
+        },
+        },
     }
 });
