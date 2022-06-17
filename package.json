@@ -28,6 +28,7 @@
     "webpack-fix-style-only-entries": "^0.5.1"
   },
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "swiper": "^8.2.4"
   }
 }

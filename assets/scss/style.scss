@@ -1,3 +1,438 @@
+@import './fonts.scss';
+
+body {
+    font-family: 'Greycliff CF';
+}
+
 * {
     box-sizing: border-box;
+}
+
+.program-section {
+    height: 100vh;
+
+    .container {
+        max-width: 1450px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 16px;
+
+        .program-content {
+            display: flex;
+
+            .found-wrapper {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .found-content {
+                    width: 100%;
+                    max-width: 550px;
+
+                    .found-title {
+                        margin-bottom: 24px;
+                        font-weight: 700;
+                        font-size: 62px;
+                    }
+                    .found-description {
+                        font-family: 'Quincy CF';
+                        font-size: 20px;
+                        font-weight: 400;
+                        margin-bottom: 38px;
+                        line-height: 150%;
+                    }
+                    .swiper-pagination {
+                        display: block;
+                        transform: translate3d(0,0,0);
+                        text-align: left;
+
+                        .swiper-pagination-bullet {
+                            display: inline-block;
+                            padding: 0;
+                            border-radius: 100px;
+                            width: auto;
+                            height: auto;
+                            margin: 5px;
+                            text-align: center;
+                            font-size: 182px;
+                            color:#fff;
+                            opacity: 1;
+                            background-color: rgba(250, 250, 250, 0.2);
+
+                            .found-tab {
+                                padding: 12px 24px 12px 12px;
+                                display: flex;
+                                align-items: center;
+                                border: 0;
+                                border-radius: 100px;
+                                background-color: rgb(246, 246, 246);
+                                opacity: 0.6;
+    
+                                .found-tab-icon {
+                                    margin-right: 10px;
+                                    width: 32px;
+                                    height: 32px;
+                                    background-color: rgb(255, 255, 255, 0);
+                                }
+
+                                .found-tab-text {
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    background-color: rgb(255, 255, 255, 0);
+                                }
+
+                                
+                            }
+                        }
+                        .swiper-pagination-bullet-active {
+                            .found-tab {
+                                opacity: 1;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination {
+                    position: static;
+                    display: block; 
+                }
+            }
+              
+            .program-list-wrapper {
+                width: 50%;
+                height: 100vh;
+                background-image: url('../images/background/purple-bgc.svg');
+
+                // width: 50%;
+                // height: 100vh;
+                // position: relative;
+
+                // .background-bubble {
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100vh;
+  
+                //     .background-bubble-fill {
+                //       fill: #000 !important;
+                //     }
+                // }
+
+
+                .swiper { 
+                    height: 100vh;
+                    
+                    .program-list {
+                        .swiper-slide {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            .program-card {
+                                max-width: 452px;
+                                text-align: center;
+                                background-color: #fff;
+                                padding: 48px;
+                                border-radius: 10px;
+                                box-shadow: 0px 20px 40px rgba(47, 47, 47, 0.2);
+    
+                                .title-wrapper {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 24px;
+    
+                                    .title-icon {
+                                        margin-right: 14px;
+                                    }
+                                    .program-item-title {
+                                        font-size: 28px;
+                                        margin: 0;
+                                        font-weight: 700;
+                                    }
+                                }
+                                .prescription-description {
+                                    line-height: 170%;
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    margin-bottom: 24px;
+                                    text-align: left;
+                                }
+                                .prescription-list {
+                                    display: flex;
+                                    padding: 0;
+    
+                                    .prescription-item {
+                                        display: flex;
+                                        align-items: center;
+                                        background-color: #FDF4DB;
+                                        padding: 12px 15px 12px 12px;
+                                        border-radius: 8px;
+    
+                                        .prescription-topic {
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                            display: block;
+                                        }
+                                        .prescription-icon {
+                                            margin-left: 8px;
+                                        }
+                                        &:nth-child(2) {
+                                            margin: 0 14px;
+                                        }
+                                    }
+                                }
+                                .card-list {
+                                    margin-bottom: 40px;
+                                    list-style: none;
+                                    padding: 0;
+    
+                                    .card-item {
+                                        margin-bottom: 16px;
+                                        text-align: left;
+                                        display: flex;
+                                        align-items: flex-start;
+    
+                                        .card-item-icon {
+                                            margin: 0 13px 0 8px;
+                                            transform: translate(0, 5px);
+                                        }
+                                        .card-item-text {
+                                            font-size: 18px;
+                                            font-weight: 400;
+                                            line-height: 26px;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                                .card-button {
+                                    background-color: #10100E;
+                                    border-radius: 5px;
+                                    color: #fff;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    padding: 13px 0;
+                                    width: 100%;
+                                    border: 0;
+                                    margin-bottom: 24px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (max-width: 1040px) {
+
+    .program-section {
+        height: 100vh;
+    
+        .container {
+            max-width: 1450px;
+            width: 100%;
+            margin: 0 auto;
+            padding-left: 0;
+    
+            .program-content {
+                display: flex;
+                flex-direction: column;
+    
+                .found-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 40px;
+                    padding: 80px 24px 0;
+    
+                    .found-content {
+                        width: 100%;
+                        max-width: 1040px;
+    
+                        .found-title {
+                            margin-bottom: 24px;
+                            margin-top: 0;
+                            font-weight: 700;
+                            font-size: 50px;
+                        }
+                        .found-description {
+                            font-family: 'Quincy CF';
+                            font-size: 20px;
+                            font-weight: 400;
+                            margin-bottom: 38px;
+                            line-height: 150%;
+                        }
+                        .swiper-pagination {
+                            display: block;
+                            transform: translate3d(0,0,0);
+                            text-align: left;
+    
+                            .swiper-pagination-bullet {
+                                display: inline-block;
+                                padding: 0;
+                                border-radius: 100px;
+                                width: auto;
+                                height: auto;
+                                margin: 5px;
+                                text-align: center;
+                                font-size: 182px;
+                                color:#fff;
+                                opacity: 1;
+                                background-color: rgba(250, 250, 250, 0.2);
+    
+                                .found-tab {
+                                    padding: 8px 15px 8px 8px;
+                                    display: flex;
+                                    align-items: center;
+                                    border: 0;
+                                    border-radius: 100px;
+                                    background-color: rgb(246, 246, 246);
+                                    opacity: 0.6;
+        
+                                    .found-tab-icon {
+                                        margin-right: 10px;
+                                        width: 28px;
+                                        height: 28px;
+                                        background-color: rgb(255, 255, 255, 0);
+                                    }
+                                    .found-tab-text {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        background-color: rgb(255, 255, 255, 0);
+                                    }
+                                }
+                            }
+                            .swiper-pagination-bullet-active {
+                                .found-tab {
+                                    opacity: 1;
+                                    font-weight: 700;
+    
+                                    // &:nth-child(1) {
+                                    //     background-color: rgba(216, 155, 40, 0.999);
+                                    // }
+                                    // &:nth-child(2) {
+                                    //     background-color: rgba(28, 24, 231, 0.976);
+                                    // }
+                                    // &:nth-child(3) {
+                                    //     background-color: rgb(28, 237, 125);
+                                    // }
+                                    // &:nth-child(4) {
+                                    //     background-color: rgba(217, 160, 15, 0.891);
+                                    // }
+                                    // &:nth-child(5) {
+                                    //     background-color: rgba(223, 32, 32, 0.876);
+                                    // }
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        position: static;
+                        display: block; 
+                    }
+                }
+                  
+                .program-list-wrapper {
+                    height: 640px;
+                    background-image: url('../images/background/purple-bgc-mobile.svg');
+                    background-repeat: no-repeat;
+                    background-size: 100% ; 
+                    width: 100%;
+
+                    .swiper { 
+                        height: 100%;
+                        transition: all 0 ease-out;
+                        
+                        .program-list {
+                            .swiper-slide {
+                                .program-card {
+                                    width: 326px;
+                                    text-align: center;
+                                    background-color: #fff;
+                                    padding: 24px;
+                                    border-radius: 10px;
+                                    box-shadow: 0px 20px 40px rgba(47, 47, 47, 0.2);
+        
+                                    .title-wrapper {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-bottom: 16px;
+        
+                                        .title-icon {
+                                            margin-right: 10px;
+                                        }
+                                        .program-item-title {
+                                            font-size: 22px !important;
+                                            margin: 0;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                    .prescription-description {
+                                        line-height: 170%;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        margin-bottom: 16px;
+                                        text-align: left;
+                                    }
+                                    .prescription-list {
+                                        display: flex;
+                                        padding: 0;
+        
+                                        .prescription-item {
+                                            display: flex;
+                                            align-items: center;
+                                            background-color: #FDF4DB;
+                                            padding: 12px 6px;
+                                            border-radius: 8px;
+        
+                                            .prescription-topic {
+                                                font-size: 12px;
+                                                font-weight: 600;
+                                                display: block;
+                                            }
+                                            .prescription-icon {
+                                                margin-left: 8px;
+                                            }
+                                            &:nth-child(2) {
+                                                margin: 0 8px;
+                                            }
+                                        }
+                                    }
+                                    .card-list {
+                                        margin-bottom: 30px;
+                                        list-style: none;
+                                        padding: 0;
+        
+                                        .card-item {
+                                            margin-bottom: 16px;
+                                            text-align: left;
+                                            display: flex;
+                                            align-items: flex-start;
+        
+                                            .card-item-icon {
+                                                margin: 0 13px 0 8px;
+                                                transform: translate(0, 5px);
+                                            }
+                                            .card-item-text {
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                line-height: 23px;
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
