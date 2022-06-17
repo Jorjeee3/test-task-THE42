@@ -41,7 +41,7 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
       renderBullet: function (index, className) {
         return `<div class="${className}"> 
-                    <button class="found-tab">
+                    <button class="found-tab" >
                         <img
                             src=${tabsContent[index].image}
                             alt="doctor"
@@ -69,22 +69,31 @@ const swiper = new Swiper('.swiper', {
             draggable: true,
             hide: false
         },
+
+        // direction: 'horizontal',
+        // slidesPerView: 1,
+        // spaceBetween: 300,
+        // mousewheel: true,
+        // scrollbar: true,
+        // centeredSlides: true,
+        // centeredSlidesBounds: true,
+
         },
-        940: {
-        direction: 'vertical',
+        340: {
+        direction: 'horizontal',
         loop: true,
         autoHeight: true,
         speed: 0.1,
-        // mousewheel: true,
-        slidesPerView: 1.5,
-        scrollbar: true,
+        mousewheel: true,
+        slidesPerView: 1,
+        scrollbar: false,
         spaceBetween: 80,
         // handleElementorBreakpoints: true,
       
         scrollbar: {
             el: '.swiper-scrollbar',
             draggable: true,
-            hide: false
+            hide: true
         },
         },
     }
