@@ -61,7 +61,7 @@ const swiper = new Swiper('.swiper', {
         // mousewheel: true,
         slidesPerView: 1.5,
         scrollbar: true,
-        spaceBetween: 80,
+        spaceBetween: 140,
         // handleElementorBreakpoints: true,
       
             scrollbar: {
