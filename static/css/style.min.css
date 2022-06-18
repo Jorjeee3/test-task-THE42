@@ -439,6 +439,9 @@ body {
     line-height: 23px;
     margin: 0;
   }
+  .program-section .container .program-content .program-list-wrapper .swiper .swiper-scrollbar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map*/
