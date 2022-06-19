@@ -32,6 +32,7 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 300,
     mousewheel: true,
+    speed: 1000,
     scrollbar: true,
     centeredSlides: true,
     centeredSlidesBounds: true,
@@ -54,28 +55,11 @@ const swiper = new Swiper('.swiper', {
     },
 
     breakpoints: {
-        1040: {
-        direction: 'vertical',
-        loop: true,
-        autoHeight: true,
-        // mousewheel: true,
-        slidesPerView: 1.5,
-        speed: 1,
-        scrollbar: true,
-        spaceBetween: 140,
-        // handleElementorBreakpoints: true,
-      
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-                hide: false
-            },
-        },
         340: {
         direction: 'horizontal',
         loop: true,
         autoHeight: true,
-        speed: 3,
+        speed: 1,
         mousewheel: false,
         slidesPerView: 1,
         scrollbar: false,
@@ -88,5 +72,22 @@ const swiper = new Swiper('.swiper', {
             hide: true
         },
         },
+        1040: {
+            direction: 'vertical',
+            loop: true,
+            autoHeight: true,
+            // mousewheel: true,
+            slidesPerView: 1.5,
+            speed: 1000,
+            scrollbar: true,
+            spaceBetween: 140,
+            // handleElementorBreakpoints: true,
+          
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    draggable: true,
+                    hide: false
+                },
+            },
     }
 });
