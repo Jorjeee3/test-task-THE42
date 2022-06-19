@@ -64,10 +64,11 @@ body {
                                 padding: 12px 24px 12px 12px;
                                 display: flex;
                                 align-items: center;
-                                border: 0;
+                                border: 1px solid rgb(255, 255, 255, 0);
                                 border-radius: 100px;
                                 background-color: rgb(246, 246, 246, 0);
                                 opacity: 0.6;
+                                cursor: pointer;
     
                                 .found-tab-icon {
                                     margin-right: 10px;
@@ -81,13 +82,19 @@ body {
                                     font-weight: 400;
                                     background-color: rgb(255, 255, 255, 0);
                                 }
+
+                                &:hover {
+                                    border: 1px solid #ddddd0;
+                                }
                             }
                         }
                         .swiper-pagination-bullet-active {
                             .found-tab {
                                 opacity: 1;
-                                font-weight: 700;
 
+                                .found-tab-text {
+                                    font-weight: 700;
+                                }
                             }
                             &:nth-child(1) {
                                 .found-tab {
@@ -180,6 +187,7 @@ body {
                                     font-size: 18px;
                                     font-weight: 400;
                                     margin-bottom: 24px;
+                                    color: #10100E;
                                     text-align: left;
                                 }
                                 .prescription-list {
@@ -311,7 +319,7 @@ body {
                                     padding: 8px 15px 8px 8px;
                                     display: flex;
                                     align-items: center;
-                                    border: 0;
+                                    border: 1px solid rgb(255, 255, 255, 0);
                                     border-radius: 100px;
                                     background-color: rgb(246, 246, 246);
                                     opacity: 0.6;
@@ -332,7 +340,10 @@ body {
                             .swiper-pagination-bullet-active {
                                 .found-tab {
                                     opacity: 1;
-                                    font-weight: 700;
+
+                                    .found-tab-text {
+                                        font-weight: 700;
+                                    }
                                 }
                             }
                         }
@@ -343,7 +354,7 @@ body {
                     }
                 }
                 .program-list-wrapper {
-                    height: 540px;
+                    height: 560px;
                     width: 100%;
                     position: relative;
 
@@ -389,6 +400,7 @@ body {
                                     .prescription-description {
                                         line-height: 170%;
                                         font-size: 16px;
+                                        color: #10100E;
                                         font-weight: 400;
                                         margin-bottom: 16px;
                                         text-align: left;

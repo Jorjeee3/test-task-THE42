@@ -117,10 +117,11 @@ body {
   padding: 12px 24px 12px 12px;
   display: flex;
   align-items: center;
-  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 100px;
   background-color: rgba(246, 246, 246, 0);
   opacity: 0.6;
+  cursor: pointer;
 }
 .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet .found-tab .found-tab-icon {
   margin-right: 10px;
@@ -133,8 +134,13 @@ body {
   font-weight: 400;
   background-color: rgba(255, 255, 255, 0);
 }
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet .found-tab:hover {
+  border: 1px solid #ddddd0;
+}
 .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab {
   opacity: 1;
+}
+.program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab .found-tab-text {
   font-weight: 700;
 }
 .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active:nth-child(1) .found-tab {
@@ -207,6 +213,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 24px;
+  color: #10100E;
   text-align: left;
 }
 .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-list {
@@ -325,7 +332,7 @@ body {
     padding: 8px 15px 8px 8px;
     display: flex;
     align-items: center;
-    border: 0;
+    border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 100px;
     background-color: rgb(246, 246, 246);
     opacity: 0.6;
@@ -343,6 +350,8 @@ body {
   }
   .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab {
     opacity: 1;
+  }
+  .program-section .container .program-content .found-wrapper .found-content .swiper-pagination .swiper-pagination-bullet-active .found-tab .found-tab-text {
     font-weight: 700;
   }
   .program-section .container .program-content .found-wrapper .swiper-pagination {
@@ -350,7 +359,7 @@ body {
     display: block;
   }
   .program-section .container .program-content .program-list-wrapper {
-    height: 540px;
+    height: 560px;
     width: 100%;
     position: relative;
   }
@@ -392,6 +401,7 @@ body {
   .program-section .container .program-content .program-list-wrapper .swiper .program-list .swiper-slide .program-card .prescription-description {
     line-height: 170%;
     font-size: 16px;
+    color: #10100E;
     font-weight: 400;
     margin-bottom: 16px;
     text-align: left;

@@ -48,22 +48,20 @@ const foundTabs = document.querySelectorAll('.found-tab')
 let desktopBackground = document.querySelector('.desktop-background')
 let mobileBackground = document.querySelector('.mobile-background')
 const swiperSlides = document.querySelectorAll('.swiper-slide')
+const swiperPaginationBullet = document.querySelectorAll('.swiper-pagination-bullet')
 
-
-// && swiperSlides[index].classList.contains('swiper-slide-active')
-
-foundTabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        if (index === descktopBackgrounds[index].id ) {
+setInterval(() => {
+    swiperPaginationBullet.forEach((tab, index) => {
+        if (tab.classList.contains('swiper-pagination-bullet-active')) {
             desktopBackground.src = descktopBackgrounds[index].image
-        }
+        } 
     })
-})
+}, 50);
 
-foundTabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        if (index === mobileBackgrounds[index].id ) {
+setInterval(() => {
+    swiperPaginationBullet.forEach((slide, index) => {
+        if (slide.classList.contains('swiper-pagination-bullet-active')) {
             mobileBackground.src = mobileBackgrounds[index].image
-        }
+        } 
     })
-})
+}, 50);
